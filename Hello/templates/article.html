@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{post.title}}{% endblock title %}
+{% block article %}
+{% load static %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'style4.css' %}">
+<ul>
+<h1 class="text-center">{{post.title}}</h1>
+<small> By:{{post.author}}</small><br/>
+<small>{{post.date}}</small><br/>
+<hr>
+<br/>
+</ul>
+
+<div>
+{{post.body}}
+</div>
+
+
+<br/><br/>
+<a href="{% url 'sci' %}" class="btn btn-secondary">Back</a>
+
+{% endblock article %}

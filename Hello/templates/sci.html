@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}<h1>Featured Posts</h1>{% endblock title %}
+{% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style5.css' %}">
+
+{% block content %}
+
+{%for post in object_list%}
+
+    {% comment %} <li>
+      <a href="{% url 'article' post.pk %}">{{post.title}}</a> -{{post.author}}<small>-{{post.date}}</small><br/>
+    </li> {% endcomment %}
+
+    <div class="card">
+      <h4 class="card-header">Featured Post {{post.pk}}</h4>
+      <div class="card-body">
+        <h5 class="card-title">{{post.title}}</h5>
+        <h5 class="card-title">{{post.author}}-{{post.date}}</h5>
+        
+        <a href="{% url 'article' post.pk %}" class="btn btn-primary">Read Post</a>
+      </div>
+    </div>
+{% endfor %}
+
+
+
+  {% endblock content %}

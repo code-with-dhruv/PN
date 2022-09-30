@@ -1,0 +1,19 @@
+/* body {
+    background-image: url("img/10bg.jpg");
+  } */
+h1{
+    text-align: center;
+    text-decoration: solid;
+    font-style: italic;
+}
+div{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration-color: antiquewhite;
+
+
+
+}
+h4{
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}

@@ -1,0 +1,15 @@
+div {
+    text-align: justify;  /* For Edge */
+    text-align-last: left;
+    color: black;
+    font-size:24px;
+    
+    
+  }
+h1{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-style: italic;
+    
+}  
